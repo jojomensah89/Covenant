@@ -41,14 +41,11 @@ function App() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-4 text-lg font-medium tracking-tight text-center text-transparent bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text md:text-lg"
+          className="mt-4"
         >
-          <Button
-            borderRadius="1.75rem"
-            className="text-black bg-white dark:bg-slate-900 dark:text-white border-neutral-200 dark:border-slate-800"
-          >
-            Enter App{" "}
-          </Button>{" "}
+          <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+            Enter App
+          </button>
         </motion.div>
       </LampContainer>{" "}
     </div>
