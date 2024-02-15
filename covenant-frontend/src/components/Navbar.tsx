@@ -1,38 +1,24 @@
-"use client"
+"use client";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import Link from "next/link";
-import { Input } from "@/components/ui/input";
 
-const Navbar = () => {
+
+
+export default function Navbar() {
   return (
-    <div className="flex justify-between px-4 py-8">
-      <div className="flex flex-col">
-        <header className="flex h-14 lg:h-[60px] items-center gap-4 border-b bg-gray-100/40 px-6 dark:bg-gray-800/40">
-          <Link className="lg:hidden" href="#">
-            <Package2Icon className="w-6 h-6" />
-            <span className="sr-only">Home</span>
-          </Link>
-          <div className="flex-1 w-full">
-            <form>
-              <div className="relative">
-                <SearchIcon className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500 dark:text-gray-400" />
-                <Input
-                  className="w-full pl-8 bg-white shadow-none appearance-none md:w-2/3 lg:w-1/3 dark:bg-gray-950"
-                  placeholder="Search projects..."
-                  type="search"
-                />
-              </div>
-            </form>
-          </div>
-          <ConnectButton />
-        </header>
-        <main className="grid md:grid-cols-[250px_1fr] gap-4 p-4 md:p-6"></main>
+    <nav className="flex flex-row items-center px-4 bg-gray-100 border-b border-gray-200 h-14 dark:border-gray-800 dark:bg-gray-950">
+      <Link className="text-lg font-bold" href="/">
+        Covenant
+      </Link>
+      <div className="flex items-center gap-4 ml-auto">
+      <ConnectButton/>
       </div>
-    </div>
-  );
-};
+    </nav>
+  )
+}
 
-export default Navbar;
+
+
 
 function Package2Icon(props: any) {
   return (
@@ -74,3 +60,16 @@ function SearchIcon(props: any) {
     </svg>
   );
 }
+
+// export default function Navbar() {
+//   return (
+//     <header className="flex items-center w-full h-20 px-4 md:px-6">
+//       <Link className="mr-auto" href="#">
+//         Covenant
+//       </Link>
+//       <div className="ml-auto">
+//         <ConnectButton />
+//       </div>
+//     </header>
+//   );
+// }
