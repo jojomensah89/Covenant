@@ -1,6 +1,6 @@
 "use client";
 
-import React, { use } from "react";
+import React, { useState } from "react";
 import {
   CardTitle,
   CardDescription,
@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import CovenantContent from "@/components/CovenanatContent";
+import CovenantSigners from "./CovenantSigners";
+import CovenantSettings from "./CovenantSettings";
 
 import { useMultistepForm } from "@/app/hooks/useMultistepForm";
 
@@ -19,11 +21,16 @@ type FormWrapperProps = {
 };
 
 const FormWrapper = ({ title }: FormWrapperProps) => {
+  const [data, setData] = useState();
   const { steps, isFirstStep, isLastStep, currentStepIndex, step, next, back } =
-    useMultistepForm([<CovenantContent />, <div>two</div>, <div>three</div>]);
+    useMultistepForm([
+      <CovenantContent />,
+      <CovenantSigners />,
+      <CovenantSettings />,
+    ]);
   return (
     <>
-      <div className="grid w-full max-w-sm gap-4">
+      <div className="grid w-full max-w-lg gap-4">
         <Card>
           <CardHeader className="flex flex-col items-center p-4">
             <CardTitle className="text-base font-bold">
