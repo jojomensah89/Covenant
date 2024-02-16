@@ -16,11 +16,11 @@ import CovenantSettings from "./CovenantSettings";
 
 import { useMultistepForm } from "@/app/hooks/useMultistepForm";
 
-type FormWrapperProps = {
-  title: string;
-};
+// type FormWrapperProps = {
+//   title: string;
+// };
 
-const FormWrapper = ({ title }: FormWrapperProps) => {
+const FormWrapper = () => {
   const [data, setData] = useState();
   const { steps, isFirstStep, isLastStep, currentStepIndex, step, next, back } =
     useMultistepForm([
@@ -28,6 +28,19 @@ const FormWrapper = ({ title }: FormWrapperProps) => {
       <CovenantSigners />,
       <CovenantSettings />,
     ]);
+
+  let title = "";
+  switch (currentStepIndex + 1) {
+    case 1:
+      title = "Content";
+      break;
+    case 2:
+      title = "Signers";
+      break;
+    default:
+      title = "Settings";
+      break;
+  }
   return (
     <>
       <div className="grid w-full max-w-lg gap-4">
