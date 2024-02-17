@@ -14,7 +14,7 @@ import CovenantContent from "@/components/CovenanatContent";
 import CovenantSigners from "./CovenantSigners";
 import CovenantSettings from "./CovenantSettings";
 
-import { useMultistepForm } from "@/app/hooks/useMultistepForm";
+import { useMultistepForm } from "@/hooks/useMultistepForm";
 
 // type FormWrapperProps = {
 //   title: string;
