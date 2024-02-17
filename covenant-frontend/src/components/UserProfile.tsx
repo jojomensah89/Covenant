@@ -7,12 +7,19 @@ import {
   CardContent,
   Card,
 } from "@/components/ui/card";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { useEffect } from "react";
+import { LogInWithAnonAadhaar, useAnonAadhaar } from "@anon-aadhaar/react";
 import { Button } from "./ui/button";
 import { useAccount } from "wagmi";
 import Link from "next/link";
 export default function UserProfile() {
   const account = useAccount();
+
+  const [anonAadhaar] = useAnonAadhaar();
+
+  useEffect(() => {
+    console.log("Anon Aadhaar status: ", anonAadhaar.status);
+  }, [anonAadhaar]);
   return (
     <Card className="w-full max-w-sm mx-auto">
       <CardHeader className="pb-0">
@@ -34,13 +41,19 @@ export default function UserProfile() {
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col items-center justify-center gap-2 py-6">
-        <Link href="/identities">
-          <Button>
-            {" "}
-            <GlassesIcon className="w-6 h-6 mr-2" />
-            Add identities
-          </Button>
-        </Link>
+        {/* <Link href="/identities"> */}
+        <Button className="mb-4">
+          {" "}
+          <GlassesIcon className="w-6 h-6 mr-2" />
+           Identities
+        </Button>
+        {/* {anonAadhaar?.status === "logged-out" && ( */}
+          <div className="flex gap-2 items-center">
+            <LogInWithAnonAadhaar />
+            <p>{anonAadhaar?.status}</p>
+          </div>
+        {/* )} */}
+        {/* </Link> */}
       </CardContent>
     </Card>
   );

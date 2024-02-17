@@ -23,8 +23,6 @@ import { Label } from "@/components/ui/label";
 
 // export default CovenantSigners;
 
-
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -44,28 +42,16 @@ import { toast } from "@/components/ui/use-toast";
 
 const items = [
   {
-    id: "recents",
-    label: "Recents",
+    id: "anonaadhaar",
+    label: "Anon Aadhaar",
   },
   {
-    id: "home",
-    label: "Home",
+    id: "zkemail",
+    label: "ZK Email",
   },
   {
-    id: "applications",
-    label: "Applications",
-  },
-  {
-    id: "desktop",
-    label: "Desktop",
-  },
-  {
-    id: "downloads",
-    label: "Downloads",
-  },
-  {
-    id: "documents",
-    label: "Documents",
+    id: "semaphore",
+    label: "Semaphore",
   },
 ] as const;
 
@@ -113,9 +99,8 @@ export default function CovenantSigners() {
                 </div>
               </div>
               <div className="my-4">
-                <FormLabel className="text-base">Sidebar</FormLabel>
                 <FormDescription>
-                  Select the items you want to display in the sidebar.
+                  Required Signed Verifications
                 </FormDescription>
               </div>
               {items.map((item) => (
@@ -155,7 +140,6 @@ export default function CovenantSigners() {
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
       </form>
     </Form>
   );
