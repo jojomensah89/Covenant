@@ -36,7 +36,8 @@
     "tailwindcss-animate": "^1.0.7",
     "viem": "latest",
     "wagmi": "latest",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "sindri": "0.0.1-alpha.27"
   },
   "devDependencies": {
     "@types/node": "^20.7.2",
