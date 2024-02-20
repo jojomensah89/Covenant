@@ -1,4 +1,5 @@
 import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card";
+<<<<<<< HEAD
 import { useState } from "react";
 
 export default function PublicOption({
@@ -14,6 +15,13 @@ export default function PublicOption({
       onClick={() => handlePrivacyChange("public")}
     >
       <Card className={`${isClicked ? "border-green-900" : ""}`}>
+=======
+
+export default function PublicOption() {
+  return (
+    <div className="flex items-center justify-center h-full">
+      <Card>
+>>>>>>> 36dcaf8fa104a08495ba6deab5e141c12784a4b0
         <CardHeader className="p-4 text-center">
           <div className="flex items-center justify-center">
             <UsersIcon className="w-6 h-6" />

@@ -1,9 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
+<<<<<<< HEAD
 import { toast } from "react-toastify";
 import { uuid } from "uuidv4";
 import { useRouter } from "next/navigation";
+=======
+>>>>>>> 36dcaf8fa104a08495ba6deab5e141c12784a4b0
 import {
   CardTitle,
   CardDescription,
@@ -18,6 +21,7 @@ import CovenantSigners from "./CovenantSigners";
 import CovenantSettings from "./CovenantSettings";
 
 import { useMultistepForm } from "@/hooks/useMultistepForm";
+<<<<<<< HEAD
 import { useAccount } from "wagmi";
 import useLocalStorage from "@/hooks/useLocalStorage";
 
@@ -123,6 +127,20 @@ const FormWrapper = () => {
         defaultAddress={signer.address}
       />,
       <CovenantSettings handleSettingsChange={handleSettingsChange} />,
+=======
+
+// type FormWrapperProps = {
+//   title: string;
+// };
+
+const FormWrapper = () => {
+  const [data, setData] = useState();
+  const { steps, isFirstStep, isLastStep, currentStepIndex, step, next, back } =
+    useMultistepForm([
+      <CovenantContent />,
+      <CovenantSigners />,
+      <CovenantSettings />,
+>>>>>>> 36dcaf8fa104a08495ba6deab5e141c12784a4b0
     ]);
 
   let title = "";
@@ -159,7 +177,11 @@ const FormWrapper = () => {
                 Next
               </Button>
             ) : (
+<<<<<<< HEAD
               <Button onClick={handleSubmit} type="button">
+=======
+              <Button onClick={next} type="button">
+>>>>>>> 36dcaf8fa104a08495ba6deab5e141c12784a4b0
                 Finish
               </Button>
             )}

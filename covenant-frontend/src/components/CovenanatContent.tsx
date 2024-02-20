@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -24,6 +25,14 @@ const CovenantContent = ({
     handleContentChange(formData); // Pass formData to the parent component
   };
 
+=======
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
+
+import { Textarea } from "@/components/ui/textarea";
+
+export default function CovenantContent() {
+>>>>>>> 36dcaf8fa104a08495ba6deab5e141c12784a4b0
   return (
     <form className="space-y-4">
       <div className="space-y-2">
@@ -31,13 +40,18 @@ const CovenantContent = ({
         <Input
           className="w-full"
           id="name"
+<<<<<<< HEAD
           name="title"
           placeholder="Gold Change Proposal"
           onChange={handleChange}
+=======
+          placeholder="Gold Change Proposal"
+>>>>>>> 36dcaf8fa104a08495ba6deab5e141c12784a4b0
         />
       </div>
       <div className="space-y-2">
         <Label htmlFor="content">Content</Label>
+<<<<<<< HEAD
         <Textarea
           name="content"
           placeholder="Enter Content here."
@@ -49,3 +63,10 @@ const CovenantContent = ({
 };
 
 export default CovenantContent;
+=======
+        <Textarea placeholder="Enter Content here." />
+      </div>
+    </form>
+  );
+}
+>>>>>>> 36dcaf8fa104a08495ba6deab5e141c12784a4b0

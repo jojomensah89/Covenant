@@ -2,6 +2,7 @@ import PrivateOption from "./PrivateOption";
 import PublicOption from "./PublicOption";
 import { Label } from "@/components/ui/label";
 import { RadioGroupItem, RadioGroup } from "@/components/ui/radio-group";
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 
@@ -54,11 +55,28 @@ const CovenantSettings = ({
         </section>
         <section>
           <p className="mb-2 text-sm text-center">Covenant Storage</p>
+=======
+const CovenantSettings = () => {
+  return (
+    <div className="flex flex-col gap-8">
+      <section className="">
+        <p className="mb-2 text-sm text-center">Covenant Privacy</p>
+        <div className="flex items-center justify-center gap-4">
+          <PublicOption />
+          <PrivateOption />
+        </div>
+      </section>
+      <section>
+        <p className="mb-2 text-sm text-center">Covenant Storage</p>
+        <div>
+          {" "}
+>>>>>>> 36dcaf8fa104a08495ba6deab5e141c12784a4b0
           <div className="flex items-center gap-2">
             <RadioGroup
               className="flex items-center gap-2"
               defaultValue="ipfs"
               id="storage"
+<<<<<<< HEAD
               onChange={handleStorageChange} // Handle storage selection change
             >
               <div className="flex items-center space-x-2">
@@ -76,6 +94,18 @@ const CovenantSettings = ({
           Submit
         </Button>
       </form>
+=======
+            >
+            
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="ipfs" id="ipfs" />
+                <Label htmlFor="ipfs"> IPFS</Label>
+              </div>
+            </RadioGroup>
+          </div>
+        </div>
+      </section>
+>>>>>>> 36dcaf8fa104a08495ba6deab5e141c12784a4b0
     </div>
   );
 };
