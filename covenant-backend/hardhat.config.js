@@ -2,6 +2,7 @@ require("@nomicfoundation/hardhat-toolbox");
 require("hardhat-deploy");
 
 require("@nomiclabs/hardhat-etherscan");
+// require("@nomicfoundation/hardhat-verify");
 
 require("dotenv").config();
 
@@ -11,6 +12,9 @@ require("@nomicfoundation/hardhat-network-helpers");
 
 const providerApiKey =
   process.env.ALCHEMY_API_KEY || "oKxs-03sij-U_N0iOlrSsZFr29-IqbuF";
+
+const deployerPrivateKey =
+  "d3cb64e889b86ae9c95924b44b6e749559aa69d6638a2d592b0da88226288d56";
 const MAINNET_RPC_URL =
   process.env.MAINNET_RPC_URL ||
   process.env.ALCHEMY_MAINNET_RPC_URL ||
@@ -37,7 +41,7 @@ module.exports = {
   solidity: {
     compilers: [
       {
-        version: "0.8.17",
+        version: "0.8.18",
       },
       {
         version: "0.8.0",
@@ -75,11 +79,32 @@ module.exports = {
   },
   verify: {
     etherscan: {
-      apiKey: {
-        goerli: "y",
-      },
+      apiKey: `${etherscanApiKey}`,
     },
   },
+  // verify: {
+  //   etherscan: {
+  //     apiKey: {
+  //       scrollSepolia: `${etherscanApiKey}`,
+  //     },
+  //     customChains: [
+  //       {
+  //         network: "scrollSepolia",
+  //         chainId: 534351,
+  //         urls: {
+  //           apiURL: "https://sepolia-rpc.scroll.io/",
+  //           browserURL: "https://scroll-sepolia.blockpi.network/v1/rpc/public",
+  //         },
+  //       },
+  //     ],
+  //   },
+  //   sourcify: {
+  //     // Disabled by default
+  //     // Doesn't need an API key
+  //     enabled: true,
+  //   },
+  // },
+
   networks: {
     hardhat: {
       chainId: 31337,
@@ -87,6 +112,11 @@ module.exports = {
     // localhost: {
     //   chainId: 31337,
     // },
+    scrollSepolia: {
+      url: "https://sepolia-rpc.scroll.io/" || "",
+      accounts: [deployerPrivateKey],
+      saveDeployments: true,
+    },
 
     goerli: {
       url: `https://eth-goerli.alchemyapi.io/v2/${providerApiKey}`,

@@ -1,19 +1,44 @@
-const { run } = require("hardhat");
+const { ethers, run } = require("hardhat");
 
-const verify = async (contractAddress, args) => {
-  console.log("Verifying contract...");
-  try {
-    await run("verify:verify", {
-      address: contractAddress,
-      constructorArguments: args,
-    });
-  } catch (e) {
-    if (e.message.toLowerCase().includes("already verified")) {
-      console.log("Already verified!");
-    } else {
-      console.log(e);
-    }
-  }
+const verifyAll = async (
+  strings,
+  proofsMetadata,
+  proofsVerification,
+  proofsHelper,
+  proofs
+) => {
+  // StringsExpanded
+  await run("verify:verify", {
+    address: strings,
+    network: "scrollSepolia",
+  });
+  // ProofsMetadata
+  await run("verify:verify", {
+    address: proofsMetadata,
+    libraries: { StringsExpanded: strings },
+    network: "scrollSepolia",
+  });
+  // ProofsVerification
+  await run("verify:verify", {
+    address: proofsVerification,
+    network: "scrollSepolia",
+  });
+  // ProofsHelper
+  await run("verify:verify", {
+    address: proofsHelper,
+    libraries: { StringsExpanded: strings },
+    network: "scrollSepolia",
+  });
+  // Proofs
+  await run("verify:verify", {
+    address: proofs,
+    libraries: {
+      StringsExpanded: strings,
+      ProofsVerification: proofsVerification,
+      ProofsHelper: proofsHelper,
+    },
+    constructorArguments: [proofsMetadata],
+    network: "scrollSepolia",
+  });
 };
-
-module.exports = verify;
+module.exports = verifyAll;

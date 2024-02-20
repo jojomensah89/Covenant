@@ -1,0 +1,417 @@
+{
+  "address": "0xf282509F9C5ACe2666163795119C52e738D0e198",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "enum ProofTypes.Proofs",
+          "name": "proof",
+          "type": "uint8"
+        },
+        {
+          "indexed": true,
+          "internalType": "string",
+          "name": "version",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "metadata",
+          "type": "bytes"
+        }
+      ],
+      "name": "MetadataAdded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "enum ProofTypes.Proofs",
+          "name": "proof",
+          "type": "uint8"
+        },
+        {
+          "indexed": true,
+          "internalType": "string",
+          "name": "version",
+          "type": "string"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes",
+          "name": "metadata",
+          "type": "bytes"
+        }
+      ],
+      "name": "MetadataUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum ProofTypes.Proofs",
+          "name": "_type",
+          "type": "uint8"
+        },
+        {
+          "internalType": "string",
+          "name": "_version",
+          "type": "string"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_metadata",
+          "type": "bytes"
+        }
+      ],
+      "name": "addMetadata",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum ProofTypes.Proofs",
+          "name": "_type",
+          "type": "uint8"
+        },
+        {
+          "internalType": "string",
+          "name": "_version",
+          "type": "string"
+        },
+        {
+          "internalType": "bytes",
+          "name": "_metadata",
+          "type": "bytes"
+        }
+      ],
+      "name": "forceUpdateMetadata",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum ProofTypes.Proofs",
+          "name": "_type",
+          "type": "uint8"
+        }
+      ],
+      "name": "getMetadataNumOfVersions",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum ProofTypes.Proofs",
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "metadataVersions",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "enum ProofTypes.Proofs",
+          "name": "",
+          "type": "uint8"
+        },
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "name": "proofsMetadata",
+      "outputs": [
+        {
+          "internalType": "bytes",
+          "name": "",
+          "type": "bytes"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes4",
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x829a4a1d676e069ff58a9c7be7fd7d098ee5d1b5d13c53b7b1ea67656f4c26ce",
+  "receipt": {
+    "to": null,
+    "from": "0xde358FCcA54Fa226aE16Ac3927487260dAfc3835",
+    "contractAddress": "0xf282509F9C5ACe2666163795119C52e738D0e198",
+    "transactionIndex": 0,
+    "gasUsed": "1556321",
+    "logsBloom": "0x00000000000000000000000000000000000000000080000000800000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000020200000000000000000800000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000040000008000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x9e75ec2e09f24320897a71d36f07f41d4f133cbfcf29d15288b189137b427d12",
+    "transactionHash": "0x829a4a1d676e069ff58a9c7be7fd7d098ee5d1b5d13c53b7b1ea67656f4c26ce",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 3006141,
+        "transactionHash": "0x829a4a1d676e069ff58a9c7be7fd7d098ee5d1b5d13c53b7b1ea67656f4c26ce",
+        "address": "0xf282509F9C5ACe2666163795119C52e738D0e198",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x000000000000000000000000de358fcca54fa226ae16ac3927487260dafc3835"
+        ],
+        "data": "0x",
+        "logIndex": 0,
+        "blockHash": "0x9e75ec2e09f24320897a71d36f07f41d4f133cbfcf29d15288b189137b427d12"
+      }
+    ],
+    "blockNumber": 3006141,
+    "cumulativeGasUsed": "1556321",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "e03c71885da52b71bfb59f715f690cfe",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.18+commit.87f61d96\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"enum ProofTypes.Proofs\",\"name\":\"proof\",\"type\":\"uint8\"},{\"indexed\":true,\"internalType\":\"string\",\"name\":\"version\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"metadata\",\"type\":\"bytes\"}],\"name\":\"MetadataAdded\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"enum ProofTypes.Proofs\",\"name\":\"proof\",\"type\":\"uint8\"},{\"indexed\":true,\"internalType\":\"string\",\"name\":\"version\",\"type\":\"string\"},{\"indexed\":false,\"internalType\":\"bytes\",\"name\":\"metadata\",\"type\":\"bytes\"}],\"name\":\"MetadataUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"enum ProofTypes.Proofs\",\"name\":\"_type\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"_version\",\"type\":\"string\"},{\"internalType\":\"bytes\",\"name\":\"_metadata\",\"type\":\"bytes\"}],\"name\":\"addMetadata\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"enum ProofTypes.Proofs\",\"name\":\"_type\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"_version\",\"type\":\"string\"},{\"internalType\":\"bytes\",\"name\":\"_metadata\",\"type\":\"bytes\"}],\"name\":\"forceUpdateMetadata\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"enum ProofTypes.Proofs\",\"name\":\"_type\",\"type\":\"uint8\"}],\"name\":\"getMetadataNumOfVersions\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"enum ProofTypes.Proofs\",\"name\":\"\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"metadataVersions\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"enum ProofTypes.Proofs\",\"name\":\"\",\"type\":\"uint8\"},{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"name\":\"proofsMetadata\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes4\",\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"addMetadata(uint8,string,bytes)\":{\"params\":{\"_metadata\":\"Metadata in JSON format.\",\"_type\":\"Type of the proof metadata. Declared in {ProofTypes} library\",\"_version\":\"Protocol version of the metadata. The version should be increased every time                there is a change in the metadata.\"}},\"forceUpdateMetadata(uint8,string,bytes)\":{\"params\":{\"_metadata\":\"Metadata in JSON format.\",\"_type\":\"Type of the proof metadata. Declared in {ProofTypes} library\",\"_version\":\"Protocol version of the metadata. The version should be increased every time                there is a change in the metadata. This function is only to adjusting the                inconsistency of metadata in smart contract and the one, used on the website.\"}},\"getMetadataNumOfVersions(uint8)\":{\"params\":{\"_type\":\"Type of the proof metadata. Declared in {ProofTypes} library\"},\"returns\":{\"_0\":\"numVersions Number of versions.\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner.\"},\"supportsInterface(bytes4)\":{\"details\":\"See {IERC165-supportsInterface}.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"addMetadata(uint8,string,bytes)\":{\"notice\":\"Add metadata by the contract administrator.\"},\"forceUpdateMetadata(uint8,string,bytes)\":{\"notice\":\"Update metadata by the contract administrator. Note: This has to be done ONLY in the event of incorrect data entry in `addMetadata`       function. Update of metadata on the protocol level should be done by adding another       metadata with newer version.\"},\"getMetadataNumOfVersions(uint8)\":{\"notice\":\"Get number of versions that exist for metadata by its name\"}},\"notice\":\"Stores metadata for Proof-of-Authority, Proof-of-Signature, Proof-of-Agreement. Has an owner who can update this metadata.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/ProofsMetadata.sol\":\"ProofsMetadata\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/access/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.0) (access/Ownable.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"../utils/Context.sol\\\";\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\nabstract contract Ownable is Context {\\n    address private _owner;\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _transferOwnership(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        _checkOwner();\\n        _;\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view virtual returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if the sender is not the owner.\\n     */\\n    function _checkOwner() internal view virtual {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby disabling any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public virtual onlyOwner {\\n        _transferOwnership(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public virtual onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _transferOwnership(newOwner);\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Internal function without access restriction.\\n     */\\n    function _transferOwnership(address newOwner) internal virtual {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n}\\n\",\"keccak256\":\"0xba43b97fba0d32eb4254f6a5a297b39a19a247082a02d6e69349e071e2946218\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.9.4) (utils/Context.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\nabstract contract Context {\\n    function _msgSender() internal view virtual returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal view virtual returns (bytes calldata) {\\n        return msg.data;\\n    }\\n\\n    function _contextSuffixLength() internal view virtual returns (uint256) {\\n        return 0;\\n    }\\n}\\n\",\"keccak256\":\"0xa92e4fa126feb6907daa0513ddd816b2eb91f30a808de54f63c17d0e162c3439\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/introspection/ERC165.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (utils/introspection/ERC165.sol)\\n\\npragma solidity ^0.8.0;\\n\\nimport \\\"./IERC165.sol\\\";\\n\\n/**\\n * @dev Implementation of the {IERC165} interface.\\n *\\n * Contracts that want to implement ERC165 should inherit from this contract and override {supportsInterface} to check\\n * for the additional interface id that will be supported. For example:\\n *\\n * ```solidity\\n * function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {\\n *     return interfaceId == type(MyInterface).interfaceId || super.supportsInterface(interfaceId);\\n * }\\n * ```\\n *\\n * Alternatively, {ERC165Storage} provides an easier to use but more expensive implementation.\\n */\\nabstract contract ERC165 is IERC165 {\\n    /**\\n     * @dev See {IERC165-supportsInterface}.\\n     */\\n    function supportsInterface(bytes4 interfaceId) public view virtual override returns (bool) {\\n        return interfaceId == type(IERC165).interfaceId;\\n    }\\n}\\n\",\"keccak256\":\"0xd10975de010d89fd1c78dc5e8a9a7e7f496198085c151648f20cba166b32582b\",\"license\":\"MIT\"},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (utils/introspection/IERC165.sol)\\n\\npragma solidity ^0.8.0;\\n\\n/**\\n * @dev Interface of the ERC165 standard, as defined in the\\n * https://eips.ethereum.org/EIPS/eip-165[EIP].\\n *\\n * Implementers can declare support of contract interfaces, which can then be\\n * queried by others ({ERC165Checker}).\\n *\\n * For an implementation, see {ERC165}.\\n */\\ninterface IERC165 {\\n    /**\\n     * @dev Returns true if this contract implements the interface defined by\\n     * `interfaceId`. See the corresponding\\n     * https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section]\\n     * to learn more about how these ids are created.\\n     *\\n     * This function call must use less than 30 000 gas.\\n     */\\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\\n}\\n\",\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\"},\"contracts/ProofsMetadata.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\r\\npragma solidity ^0.8.18;\\r\\n\\r\\n// import \\\"hardhat/console.sol\\\";\\r\\n\\r\\nimport { Ownable } from '@openzeppelin/contracts/access/Ownable.sol';\\r\\nimport { ERC165 } from '@openzeppelin/contracts/utils/introspection/ERC165.sol';\\r\\nimport { StringsExpanded } from './libs/StringsExpanded.sol';\\r\\nimport { ProofTypes } from './libs/common/ProofTypes.sol';\\r\\nimport { IProofsMetadata } from './interfaces/IProofMetadata.sol';\\r\\n\\r\\n/**\\r\\n * Stores metadata for Proof-of-Authority, Proof-of-Signature, Proof-of-Agreement. Has an owner who\\r\\n * can update this metadata.\\r\\n */\\r\\ncontract ProofsMetadata is IProofsMetadata, Ownable, ERC165 {\\r\\n    using StringsExpanded for string;\\r\\n\\r\\n    // proof type -> version -> metadata itself\\r\\n    mapping(ProofTypes.Proofs => mapping(string => bytes)) public proofsMetadata;\\r\\n    // proof type -> history of versions\\r\\n    mapping(ProofTypes.Proofs => string[]) public metadataVersions;\\r\\n\\r\\n    function supportsInterface(\\r\\n        bytes4 interfaceId\\r\\n    ) public view virtual override(ERC165) returns (bool) {\\r\\n        return\\r\\n            interfaceId == type(IProofsMetadata).interfaceId ||\\r\\n            super.supportsInterface(interfaceId);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * Get number of versions that exist for metadata by its name\\r\\n     * @param _type Type of the proof metadata. Declared in {ProofTypes} library\\r\\n     * @return numVersions Number of versions.\\r\\n     */\\r\\n    function getMetadataNumOfVersions(ProofTypes.Proofs _type) public view returns (uint256) {\\r\\n        return metadataVersions[_type].length;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * Add metadata by the contract administrator.\\r\\n     * @param _type Type of the proof metadata. Declared in {ProofTypes} library\\r\\n     * @param _version Protocol version of the metadata. The version should be increased every time\\r\\n     *                there is a change in the metadata.\\r\\n     * @param _metadata Metadata in JSON format.\\r\\n     */\\r\\n    function addMetadata(\\r\\n        ProofTypes.Proofs _type,\\r\\n        string calldata _version,\\r\\n        bytes calldata _metadata\\r\\n    ) public onlyOwner {\\r\\n        require(_version.length() > 0 && _metadata.length > 0, 'Input params cannot be empty');\\r\\n        require(proofsMetadata[_type][_version].length == 0, 'Metadata already exists');\\r\\n\\r\\n        proofsMetadata[_type][_version] = _metadata;\\r\\n        metadataVersions[_type].push(_version);\\r\\n\\r\\n        emit MetadataAdded(_type, _version, _metadata);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * Update metadata by the contract administrator.\\r\\n     * Note: This has to be done ONLY in the event of incorrect data entry in `addMetadata`\\r\\n     *       function. Update of metadata on the protocol level should be done by adding another\\r\\n     *       metadata with newer version.\\r\\n     * @param _type Type of the proof metadata. Declared in {ProofTypes} library\\r\\n     * @param _version Protocol version of the metadata. The version should be increased every time\\r\\n     *                there is a change in the metadata. This function is only to adjusting the\\r\\n     *                inconsistency of metadata in smart contract and the one, used on the website.\\r\\n     * @param _metadata Metadata in JSON format.\\r\\n     */\\r\\n    function forceUpdateMetadata(\\r\\n        ProofTypes.Proofs _type,\\r\\n        string calldata _version,\\r\\n        bytes calldata _metadata\\r\\n    ) public onlyOwner {\\r\\n        require(_version.length() > 0 && _metadata.length > 0, 'Input params cannot be empty');\\r\\n        require(proofsMetadata[_type][_version].length > 0, 'Metadata does not exist');\\r\\n\\r\\n        proofsMetadata[_type][_version] = _metadata;\\r\\n\\r\\n        emit MetadataUpdated(_type, _version, _metadata);\\r\\n    }\\r\\n}\",\"keccak256\":\"0x3df41efdb10c86a49b394a45b8185e51f85b3ad36ec3f797e4ae92e288b16165\",\"license\":\"UNLICENSED\"},\"contracts/interfaces/IProofMetadata.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\r\\npragma solidity ^0.8.18;\\r\\n\\r\\nimport { ProofTypes } from '../libs/common/ProofTypes.sol';\\r\\n\\r\\ninterface IProofsMetadata {\\r\\n    event MetadataAdded(ProofTypes.Proofs proof, string indexed version, bytes metadata);\\r\\n    event MetadataUpdated(ProofTypes.Proofs proof, string indexed version, bytes metadata);\\r\\n\\r\\n    function proofsMetadata(\\r\\n        ProofTypes.Proofs _type,\\r\\n        string calldata _version\\r\\n    ) external view returns (bytes memory);\\r\\n\\r\\n    function metadataVersions(\\r\\n        ProofTypes.Proofs _type,\\r\\n        uint256 index\\r\\n    ) external view returns (string memory);\\r\\n\\r\\n    function getMetadataNumOfVersions(ProofTypes.Proofs _type) external view returns (uint256);\\r\\n\\r\\n    function addMetadata(\\r\\n        ProofTypes.Proofs _type,\\r\\n        string calldata _version,\\r\\n        bytes calldata _metadata\\r\\n    ) external;\\r\\n\\r\\n    function forceUpdateMetadata(\\r\\n        ProofTypes.Proofs _type,\\r\\n        string calldata _version,\\r\\n        bytes calldata _metadata\\r\\n    ) external;\\r\\n}\",\"keccak256\":\"0xa4b02172e8de9ec660c3b27761c94dff8730702c7b3648d00d5695d6cd69074a\",\"license\":\"UNLICENSED\"},\"contracts/libs/StringsExpanded.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\r\\npragma solidity ^0.8.18;\\r\\n\\r\\n/**\\r\\n * Enhances operation with strings that are not possible in the current Solidity version (v0.8.18)\\r\\n */\\r\\nlibrary StringsExpanded {\\r\\n    /**\\r\\n     * @dev Compares two strings\\r\\n     * @param _s1 One string\\r\\n     * @param _s2 Another string\\r\\n     * @return Are string equal\\r\\n     */\\r\\n    function equal(string memory _s1, string memory _s2) internal pure returns (bool) {\\r\\n        return keccak256(abi.encodePacked(_s1)) == keccak256(abi.encodePacked(_s2));\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * Gets length of the string\\r\\n     * @param _s Input string\\r\\n     * @return res The lenght of the string\\r\\n     */\\r\\n    function length(string memory _s) public pure returns (uint256) {\\r\\n        return bytes(_s).length;\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * Combines two input strings into one\\r\\n     * @param _s1 The first string\\r\\n     * @param _s2 The second string\\r\\n     * @return res The resultant string created by merging s1 and s2\\r\\n     */\\r\\n    function concat(string memory _s1, string memory _s2) public pure returns (string memory) {\\r\\n        return string(abi.encodePacked(_s1, _s2));\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * Converts a `uint256` to its ASCII `string` decimal representation\\r\\n     * @notice Inspired by OraclizeAPI's implementation - MIT licence\\r\\n     * https://github.com/oraclize/ethereum-api/blob/b42146b063c7d6ee1358846c198246239e9360e8/oraclizeAPI_0.4.25.sol\\r\\n     * @param _x Input number\\r\\n     * @return res Number represented as a string\\r\\n     */\\r\\n    function toString(uint256 _x) public pure returns (string memory) {\\r\\n        if (_x == 0) {\\r\\n            return '0';\\r\\n        }\\r\\n        uint256 _temp = _x;\\r\\n        uint256 _digits;\\r\\n        while (_temp != 0) {\\r\\n            _digits++;\\r\\n            _temp /= 10;\\r\\n        }\\r\\n        bytes memory _buffer = new bytes(_digits);\\r\\n        while (_x != 0) {\\r\\n            _digits -= 1;\\r\\n            _buffer[_digits] = bytes1(uint8(48 + uint256(_x % 10)));\\r\\n            _x /= 10;\\r\\n        }\\r\\n        return string(_buffer);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * Converts an Ethereum address to a string\\r\\n     * Note: only lowercase letters are used\\r\\n     * @param _addr The Ethereum address to convert\\r\\n     * @return res The string representation of the Ethereum address, including the '0x' prefix\\r\\n     */\\r\\n    function toString(address _addr) public pure returns (string memory) {\\r\\n        bytes32 _bytes = bytes32(uint256(uint160(_addr)));\\r\\n        bytes memory HEX = '0123456789abcdef';\\r\\n        bytes memory str = new bytes(42);\\r\\n        str[0] = '0';\\r\\n        str[1] = 'x';\\r\\n        for (uint i = 0; i < 20; i++) {\\r\\n            str[i * 2 + 2] = HEX[uint8(_bytes[i + 12] >> 4)];\\r\\n            str[i * 2 + 3] = HEX[uint8(_bytes[i + 12] & 0x0f)];\\r\\n        }\\r\\n        return string(str);\\r\\n    }\\r\\n\\r\\n    /**\\r\\n     * Converts Solidity bytes to a string\\r\\n     * @param _bytes Input bytes\\r\\n     * @return res Input bytes in a string format with '0x' prefix\\r\\n     */\\r\\n    function toHexString(bytes memory _bytes) public pure returns (string memory) {\\r\\n        bytes memory hexString = new bytes(_bytes.length * 2);\\r\\n\\r\\n        uint256 index = 0;\\r\\n        for (uint256 i = 0; i < _bytes.length; i++) {\\r\\n            uint256 value = uint256(uint8(_bytes[i]));\\r\\n\\r\\n            bytes1 highNibble = bytes1(uint8((value & 0xf0) >> 4));\\r\\n            bytes1 lowNibble = bytes1(uint8(value & 0x0f));\\r\\n\\r\\n            hexString[index++] = charToHex(highNibble);\\r\\n            hexString[index++] = charToHex(lowNibble);\\r\\n        }\\r\\n\\r\\n        return string(abi.encodePacked('0x', string(hexString)));\\r\\n    }\\r\\n\\r\\n    function charToHex(bytes1 _char) private pure returns (bytes1) {\\r\\n        if (uint8(_char) < 10) {\\r\\n            return bytes1(uint8(_char) + 0x30); // '0' to '9'\\r\\n        } else {\\r\\n            return bytes1(uint8(_char) + 0x57); // 'a' to 'f'\\r\\n        }\\r\\n    }\\r\\n}\",\"keccak256\":\"0xb3480132ce0f48ca9c7e33005afc117d2d268aad436fc867ed1d2d8e705cb6ac\",\"license\":\"UNLICENSED\"},\"contracts/libs/common/ProofTypes.sol\":{\"content\":\"\\r\\n// SPDX-License-Identifier: UNLICENSED\\r\\npragma solidity ^0.8.18;\\r\\n\\r\\nlibrary ProofTypes {\\r\\n    enum Proofs {\\r\\n        ProofOfAuthority,\\r\\n        ProofOfSignature,\\r\\n        ProofOfAgreement\\r\\n    }\\r\\n}\",\"keccak256\":\"0xcdfb33e32fff9df02977629858f58c1215e7e54e13a99f323f4d8e960c3d1571\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061002d61002261003260201b60201c565b61003a60201b60201c565b6100fe565b600033905090565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508173ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a35050565b611ac68061010d6000396000f3fe608060405234801561001057600080fd5b50600436106100935760003560e01c80637f077eb5116100665780637f077eb51461011e5780638da5cb5b1461013a578063af0b044e14610158578063f11b60d814610188578063f2fde38b146101b857610093565b806301ffc9a714610098578063213bc6bd146100c85780636a22ee80146100e4578063715018a614610114575b600080fd5b6100b260048036038101906100ad9190610c55565b6101d4565b6040516100bf9190610c9d565b60405180910390f35b6100e260048036038101906100dd9190610d98565b61024e565b005b6100fe60048036038101906100f99190610f6e565b61053b565b60405161010b9190611049565b60405180910390f35b61011c6105fe565b005b61013860048036038101906101339190610d98565b610612565b005b61014261088c565b60405161014f91906110ac565b60405180910390f35b610172600480360381019061016d91906110fd565b6108b5565b60405161017f9190611192565b60405180910390f35b6101a2600480360381019061019d91906111b4565b61096e565b6040516101af91906111f0565b60405180910390f35b6101d260048036038101906101cd9190611237565b6109b2565b005b60007f6a0e321e000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19161480610247575061024682610a35565b5b9050919050565b610256610a9f565b600084848080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505073377662a8588c20Bf94B3b5685d096FE1CdF70Ef663436a66e790916040518263ffffffff1660e01b81526004016102d591906112ae565b602060405180830381865af41580156102f2573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061031691906112e5565b1180156103265750600082829050115b610365576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161035c9061135e565b60405180910390fd5b60006001600087600281111561037e5761037d61137e565b5b60028111156103905761038f61137e565b5b815260200190815260200160002085856040516103ae9291906113dd565b908152602001604051809103902080546103c790611425565b905014610409576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610400906114a2565b60405180910390fd5b8181600160008860028111156104225761042161137e565b5b60028111156104345761043361137e565b5b815260200190815260200160002086866040516104529291906113dd565b9081526020016040518091039020918261046d929190611679565b50600260008660028111156104855761048461137e565b5b60028111156104975761049661137e565b5b81526020019081526020016000208484909180600181540180825580915050600190039060005260206000200160009091929091929091929091925091826104e09291906117af565b5083836040516104f19291906113dd565b60405180910390207f0f6e2353953f3c9450e54bd9f149ad50fafa0e659a5cb70de88ebb5f302d0fe586848460405161052c939291906118f4565b60405180910390a25050505050565b60016020528160005260406000208180516020810182018051848252602083016020850120818352809550505050505060009150915050805461057d90611425565b80601f01602080910402602001604051908101604052809291908181526020018280546105a990611425565b80156105f65780601f106105cb576101008083540402835291602001916105f6565b820191906000526020600020905b8154815290600101906020018083116105d957829003601f168201915b505050505081565b610606610a9f565b6106106000610b1d565b565b61061a610a9f565b600084848080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505073377662a8588c20Bf94B3b5685d096FE1CdF70Ef663436a66e790916040518263ffffffff1660e01b815260040161069991906112ae565b602060405180830381865af41580156106b6573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106da91906112e5565b1180156106ea5750600082829050115b610729576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016107209061135e565b60405180910390fd5b6000600160008760028111156107425761074161137e565b5b60028111156107545761075361137e565b5b815260200190815260200160002085856040516107729291906113dd565b9081526020016040518091039020805461078b90611425565b9050116107cd576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016107c490611972565b60405180910390fd5b8181600160008860028111156107e6576107e561137e565b5b60028111156107f8576107f761137e565b5b815260200190815260200160002086866040516108169291906113dd565b90815260200160405180910390209182610831929190611679565b5083836040516108429291906113dd565b60405180910390207f0383d2b088bbe6ad5b6f198b225c7b025f97de8bb95b72df89b3fbe9a371098b86848460405161087d939291906118f4565b60405180910390a25050505050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b600260205281600052604060002081815481106108d157600080fd5b906000526020600020016000915091505080546108ed90611425565b80601f016020809104026020016040519081016040528092919081815260200182805461091990611425565b80156109665780601f1061093b57610100808354040283529160200191610966565b820191906000526020600020905b81548152906001019060200180831161094957829003601f168201915b505050505081565b6000600260008360028111156109875761098661137e565b5b60028111156109995761099861137e565b5b8152602001908152602001600020805490509050919050565b6109ba610a9f565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1603610a29576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610a2090611a04565b60405180910390fd5b610a3281610b1d565b50565b60007f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916149050919050565b610aa7610be1565b73ffffffffffffffffffffffffffffffffffffffff16610ac561088c565b73ffffffffffffffffffffffffffffffffffffffff1614610b1b576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610b1290611a70565b60405180910390fd5b565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508173ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a35050565b600033905090565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b610c3281610bfd565b8114610c3d57600080fd5b50565b600081359050610c4f81610c29565b92915050565b600060208284031215610c6b57610c6a610bf3565b5b6000610c7984828501610c40565b91505092915050565b60008115159050919050565b610c9781610c82565b82525050565b6000602082019050610cb26000830184610c8e565b92915050565b60038110610cc557600080fd5b50565b600081359050610cd781610cb8565b92915050565b600080fd5b600080fd5b600080fd5b60008083601f840112610d0257610d01610cdd565b5b8235905067ffffffffffffffff811115610d1f57610d1e610ce2565b5b602083019150836001820283011115610d3b57610d3a610ce7565b5b9250929050565b60008083601f840112610d5857610d57610cdd565b5b8235905067ffffffffffffffff811115610d7557610d74610ce2565b5b602083019150836001820283011115610d9157610d90610ce7565b5b9250929050565b600080600080600060608688031215610db457610db3610bf3565b5b6000610dc288828901610cc8565b955050602086013567ffffffffffffffff811115610de357610de2610bf8565b5b610def88828901610cec565b9450945050604086013567ffffffffffffffff811115610e1257610e11610bf8565b5b610e1e88828901610d42565b92509250509295509295909350565b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610e7b82610e32565b810181811067ffffffffffffffff82111715610e9a57610e99610e43565b5b80604052505050565b6000610ead610be9565b9050610eb98282610e72565b919050565b600067ffffffffffffffff821115610ed957610ed8610e43565b5b610ee282610e32565b9050602081019050919050565b82818337600083830152505050565b6000610f11610f0c84610ebe565b610ea3565b905082815260208101848484011115610f2d57610f2c610e2d565b5b610f38848285610eef565b509392505050565b600082601f830112610f5557610f54610cdd565b5b8135610f65848260208601610efe565b91505092915050565b60008060408385031215610f8557610f84610bf3565b5b6000610f9385828601610cc8565b925050602083013567ffffffffffffffff811115610fb457610fb3610bf8565b5b610fc085828601610f40565b9150509250929050565b600081519050919050565b600082825260208201905092915050565b60005b83811015611004578082015181840152602081019050610fe9565b60008484015250505050565b600061101b82610fca565b6110258185610fd5565b9350611035818560208601610fe6565b61103e81610e32565b840191505092915050565b600060208201905081810360008301526110638184611010565b905092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006110968261106b565b9050919050565b6110a68161108b565b82525050565b60006020820190506110c1600083018461109d565b92915050565b6000819050919050565b6110da816110c7565b81146110e557600080fd5b50565b6000813590506110f7816110d1565b92915050565b6000806040838503121561111457611113610bf3565b5b600061112285828601610cc8565b9250506020611133858286016110e8565b9150509250929050565b600081519050919050565b600082825260208201905092915050565b60006111648261113d565b61116e8185611148565b935061117e818560208601610fe6565b61118781610e32565b840191505092915050565b600060208201905081810360008301526111ac8184611159565b905092915050565b6000602082840312156111ca576111c9610bf3565b5b60006111d884828501610cc8565b91505092915050565b6111ea816110c7565b82525050565b600060208201905061120560008301846111e1565b92915050565b6112148161108b565b811461121f57600080fd5b50565b6000813590506112318161120b565b92915050565b60006020828403121561124d5761124c610bf3565b5b600061125b84828501611222565b91505092915050565b600082825260208201905092915050565b60006112808261113d565b61128a8185611264565b935061129a818560208601610fe6565b6112a381610e32565b840191505092915050565b600060208201905081810360008301526112c88184611275565b905092915050565b6000815190506112df816110d1565b92915050565b6000602082840312156112fb576112fa610bf3565b5b6000611309848285016112d0565b91505092915050565b7f496e70757420706172616d732063616e6e6f7420626520656d70747900000000600082015250565b6000611348601c83611148565b915061135382611312565b602082019050919050565b600060208201905081810360008301526113778161133b565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600081905092915050565b60006113c483856113ad565b93506113d1838584610eef565b82840190509392505050565b60006113ea8284866113b8565b91508190509392505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b6000600282049050600182168061143d57607f821691505b6020821081036114505761144f6113f6565b5b50919050565b7f4d6574616461746120616c726561647920657869737473000000000000000000600082015250565b600061148c601783611148565b915061149782611456565b602082019050919050565b600060208201905081810360008301526114bb8161147f565b9050919050565b600082905092915050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b60006008830261152f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff826114f2565b61153986836114f2565b95508019841693508086168417925050509392505050565b6000819050919050565b600061157661157161156c846110c7565b611551565b6110c7565b9050919050565b6000819050919050565b6115908361155b565b6115a461159c8261157d565b8484546114ff565b825550505050565b600090565b6115b96115ac565b6115c4818484611587565b505050565b5b818110156115e8576115dd6000826115b1565b6001810190506115ca565b5050565b601f82111561162d576115fe816114cd565b611607846114e2565b81016020851015611616578190505b61162a611622856114e2565b8301826115c9565b50505b505050565b600082821c905092915050565b600061165060001984600802611632565b1980831691505092915050565b6000611669838361163f565b9150826002028217905092915050565b61168383836114c2565b67ffffffffffffffff81111561169c5761169b610e43565b5b6116a68254611425565b6116b18282856115ec565b6000601f8311600181146116e057600084156116ce578287013590505b6116d8858261165d565b865550611740565b601f1984166116ee866114cd565b60005b82811015611716578489013582556001820191506020850194506020810190506116f1565b86831015611733578489013561172f601f89168261163f565b8355505b6001600288020188555050505b50505050505050565b600082905092915050565b60008190508160005260206000209050919050565b601f8211156117aa5761177b81611754565b611784846114e2565b81016020851015611793578190505b6117a761179f856114e2565b8301826115c9565b50505b505050565b6117b98383611749565b67ffffffffffffffff8111156117d2576117d1610e43565b5b6117dc8254611425565b6117e7828285611769565b6000601f8311600181146118165760008415611804578287013590505b61180e858261165d565b865550611876565b601f19841661182486611754565b60005b8281101561184c57848901358255600182019150602085019450602081019050611827565b868310156118695784890135611865601f89168261163f565b8355505b6001600288020188555050505b50505050505050565b600381106118905761188f61137e565b5b50565b60008190506118a18261187f565b919050565b60006118b182611893565b9050919050565b6118c1816118a6565b82525050565b60006118d38385610fd5565b93506118e0838584610eef565b6118e983610e32565b840190509392505050565b600060408201905061190960008301866118b8565b818103602083015261191c8184866118c7565b9050949350505050565b7f4d6574616461746120646f6573206e6f74206578697374000000000000000000600082015250565b600061195c601783611148565b915061196782611926565b602082019050919050565b6000602082019050818103600083015261198b8161194f565b9050919050565b7f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160008201527f6464726573730000000000000000000000000000000000000000000000000000602082015250565b60006119ee602683611148565b91506119f982611992565b604082019050919050565b60006020820190508181036000830152611a1d816119e1565b9050919050565b7f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572600082015250565b6000611a5a602083611148565b9150611a6582611a24565b602082019050919050565b60006020820190508181036000830152611a8981611a4d565b905091905056fea2646970667358221220f260b611b7627537407385a8ed93b8213e03ba2774b9371803d6fa0d4943e4d464736f6c63430008120033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100935760003560e01c80637f077eb5116100665780637f077eb51461011e5780638da5cb5b1461013a578063af0b044e14610158578063f11b60d814610188578063f2fde38b146101b857610093565b806301ffc9a714610098578063213bc6bd146100c85780636a22ee80146100e4578063715018a614610114575b600080fd5b6100b260048036038101906100ad9190610c55565b6101d4565b6040516100bf9190610c9d565b60405180910390f35b6100e260048036038101906100dd9190610d98565b61024e565b005b6100fe60048036038101906100f99190610f6e565b61053b565b60405161010b9190611049565b60405180910390f35b61011c6105fe565b005b61013860048036038101906101339190610d98565b610612565b005b61014261088c565b60405161014f91906110ac565b60405180910390f35b610172600480360381019061016d91906110fd565b6108b5565b60405161017f9190611192565b60405180910390f35b6101a2600480360381019061019d91906111b4565b61096e565b6040516101af91906111f0565b60405180910390f35b6101d260048036038101906101cd9190611237565b6109b2565b005b60007f6a0e321e000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff19161480610247575061024682610a35565b5b9050919050565b610256610a9f565b600084848080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505073__$010b943296133a43821a132050619653d2$__63436a66e790916040518263ffffffff1660e01b81526004016102d591906112ae565b602060405180830381865af41580156102f2573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061031691906112e5565b1180156103265750600082829050115b610365576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040161035c9061135e565b60405180910390fd5b60006001600087600281111561037e5761037d61137e565b5b60028111156103905761038f61137e565b5b815260200190815260200160002085856040516103ae9291906113dd565b908152602001604051809103902080546103c790611425565b905014610409576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610400906114a2565b60405180910390fd5b8181600160008860028111156104225761042161137e565b5b60028111156104345761043361137e565b5b815260200190815260200160002086866040516104529291906113dd565b9081526020016040518091039020918261046d929190611679565b50600260008660028111156104855761048461137e565b5b60028111156104975761049661137e565b5b81526020019081526020016000208484909180600181540180825580915050600190039060005260206000200160009091929091929091929091925091826104e09291906117af565b5083836040516104f19291906113dd565b60405180910390207f0f6e2353953f3c9450e54bd9f149ad50fafa0e659a5cb70de88ebb5f302d0fe586848460405161052c939291906118f4565b60405180910390a25050505050565b60016020528160005260406000208180516020810182018051848252602083016020850120818352809550505050505060009150915050805461057d90611425565b80601f01602080910402602001604051908101604052809291908181526020018280546105a990611425565b80156105f65780601f106105cb576101008083540402835291602001916105f6565b820191906000526020600020905b8154815290600101906020018083116105d957829003601f168201915b505050505081565b610606610a9f565b6106106000610b1d565b565b61061a610a9f565b600084848080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505073__$010b943296133a43821a132050619653d2$__63436a66e790916040518263ffffffff1660e01b815260040161069991906112ae565b602060405180830381865af41580156106b6573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906106da91906112e5565b1180156106ea5750600082829050115b610729576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016107209061135e565b60405180910390fd5b6000600160008760028111156107425761074161137e565b5b60028111156107545761075361137e565b5b815260200190815260200160002085856040516107729291906113dd565b9081526020016040518091039020805461078b90611425565b9050116107cd576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016107c490611972565b60405180910390fd5b8181600160008860028111156107e6576107e561137e565b5b60028111156107f8576107f761137e565b5b815260200190815260200160002086866040516108169291906113dd565b90815260200160405180910390209182610831929190611679565b5083836040516108429291906113dd565b60405180910390207f0383d2b088bbe6ad5b6f198b225c7b025f97de8bb95b72df89b3fbe9a371098b86848460405161087d939291906118f4565b60405180910390a25050505050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b600260205281600052604060002081815481106108d157600080fd5b906000526020600020016000915091505080546108ed90611425565b80601f016020809104026020016040519081016040528092919081815260200182805461091990611425565b80156109665780601f1061093b57610100808354040283529160200191610966565b820191906000526020600020905b81548152906001019060200180831161094957829003601f168201915b505050505081565b6000600260008360028111156109875761098661137e565b5b60028111156109995761099861137e565b5b8152602001908152602001600020805490509050919050565b6109ba610a9f565b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1603610a29576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610a2090611a04565b60405180910390fd5b610a3281610b1d565b50565b60007f01ffc9a7000000000000000000000000000000000000000000000000000000007bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916827bffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916149050919050565b610aa7610be1565b73ffffffffffffffffffffffffffffffffffffffff16610ac561088c565b73ffffffffffffffffffffffffffffffffffffffff1614610b1b576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610b1290611a70565b60405180910390fd5b565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff169050816000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508173ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff167f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e060405160405180910390a35050565b600033905090565b6000604051905090565b600080fd5b600080fd5b60007fffffffff0000000000000000000000000000000000000000000000000000000082169050919050565b610c3281610bfd565b8114610c3d57600080fd5b50565b600081359050610c4f81610c29565b92915050565b600060208284031215610c6b57610c6a610bf3565b5b6000610c7984828501610c40565b91505092915050565b60008115159050919050565b610c9781610c82565b82525050565b6000602082019050610cb26000830184610c8e565b92915050565b60038110610cc557600080fd5b50565b600081359050610cd781610cb8565b92915050565b600080fd5b600080fd5b600080fd5b60008083601f840112610d0257610d01610cdd565b5b8235905067ffffffffffffffff811115610d1f57610d1e610ce2565b5b602083019150836001820283011115610d3b57610d3a610ce7565b5b9250929050565b60008083601f840112610d5857610d57610cdd565b5b8235905067ffffffffffffffff811115610d7557610d74610ce2565b5b602083019150836001820283011115610d9157610d90610ce7565b5b9250929050565b600080600080600060608688031215610db457610db3610bf3565b5b6000610dc288828901610cc8565b955050602086013567ffffffffffffffff811115610de357610de2610bf8565b5b610def88828901610cec565b9450945050604086013567ffffffffffffffff811115610e1257610e11610bf8565b5b610e1e88828901610d42565b92509250509295509295909350565b600080fd5b6000601f19601f8301169050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b610e7b82610e32565b810181811067ffffffffffffffff82111715610e9a57610e99610e43565b5b80604052505050565b6000610ead610be9565b9050610eb98282610e72565b919050565b600067ffffffffffffffff821115610ed957610ed8610e43565b5b610ee282610e32565b9050602081019050919050565b82818337600083830152505050565b6000610f11610f0c84610ebe565b610ea3565b905082815260208101848484011115610f2d57610f2c610e2d565b5b610f38848285610eef565b509392505050565b600082601f830112610f5557610f54610cdd565b5b8135610f65848260208601610efe565b91505092915050565b60008060408385031215610f8557610f84610bf3565b5b6000610f9385828601610cc8565b925050602083013567ffffffffffffffff811115610fb457610fb3610bf8565b5b610fc085828601610f40565b9150509250929050565b600081519050919050565b600082825260208201905092915050565b60005b83811015611004578082015181840152602081019050610fe9565b60008484015250505050565b600061101b82610fca565b6110258185610fd5565b9350611035818560208601610fe6565b61103e81610e32565b840191505092915050565b600060208201905081810360008301526110638184611010565b905092915050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006110968261106b565b9050919050565b6110a68161108b565b82525050565b60006020820190506110c1600083018461109d565b92915050565b6000819050919050565b6110da816110c7565b81146110e557600080fd5b50565b6000813590506110f7816110d1565b92915050565b6000806040838503121561111457611113610bf3565b5b600061112285828601610cc8565b9250506020611133858286016110e8565b9150509250929050565b600081519050919050565b600082825260208201905092915050565b60006111648261113d565b61116e8185611148565b935061117e818560208601610fe6565b61118781610e32565b840191505092915050565b600060208201905081810360008301526111ac8184611159565b905092915050565b6000602082840312156111ca576111c9610bf3565b5b60006111d884828501610cc8565b91505092915050565b6111ea816110c7565b82525050565b600060208201905061120560008301846111e1565b92915050565b6112148161108b565b811461121f57600080fd5b50565b6000813590506112318161120b565b92915050565b60006020828403121561124d5761124c610bf3565b5b600061125b84828501611222565b91505092915050565b600082825260208201905092915050565b60006112808261113d565b61128a8185611264565b935061129a818560208601610fe6565b6112a381610e32565b840191505092915050565b600060208201905081810360008301526112c88184611275565b905092915050565b6000815190506112df816110d1565b92915050565b6000602082840312156112fb576112fa610bf3565b5b6000611309848285016112d0565b91505092915050565b7f496e70757420706172616d732063616e6e6f7420626520656d70747900000000600082015250565b6000611348601c83611148565b915061135382611312565b602082019050919050565b600060208201905081810360008301526113778161133b565b9050919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602160045260246000fd5b600081905092915050565b60006113c483856113ad565b93506113d1838584610eef565b82840190509392505050565b60006113ea8284866113b8565b91508190509392505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052602260045260246000fd5b6000600282049050600182168061143d57607f821691505b6020821081036114505761144f6113f6565b5b50919050565b7f4d6574616461746120616c726561647920657869737473000000000000000000600082015250565b600061148c601783611148565b915061149782611456565b602082019050919050565b600060208201905081810360008301526114bb8161147f565b9050919050565b600082905092915050565b60008190508160005260206000209050919050565b60006020601f8301049050919050565b600082821b905092915050565b60006008830261152f7fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff826114f2565b61153986836114f2565b95508019841693508086168417925050509392505050565b6000819050919050565b600061157661157161156c846110c7565b611551565b6110c7565b9050919050565b6000819050919050565b6115908361155b565b6115a461159c8261157d565b8484546114ff565b825550505050565b600090565b6115b96115ac565b6115c4818484611587565b505050565b5b818110156115e8576115dd6000826115b1565b6001810190506115ca565b5050565b601f82111561162d576115fe816114cd565b611607846114e2565b81016020851015611616578190505b61162a611622856114e2565b8301826115c9565b50505b505050565b600082821c905092915050565b600061165060001984600802611632565b1980831691505092915050565b6000611669838361163f565b9150826002028217905092915050565b61168383836114c2565b67ffffffffffffffff81111561169c5761169b610e43565b5b6116a68254611425565b6116b18282856115ec565b6000601f8311600181146116e057600084156116ce578287013590505b6116d8858261165d565b865550611740565b601f1984166116ee866114cd565b60005b82811015611716578489013582556001820191506020850194506020810190506116f1565b86831015611733578489013561172f601f89168261163f565b8355505b6001600288020188555050505b50505050505050565b600082905092915050565b60008190508160005260206000209050919050565b601f8211156117aa5761177b81611754565b611784846114e2565b81016020851015611793578190505b6117a761179f856114e2565b8301826115c9565b50505b505050565b6117b98383611749565b67ffffffffffffffff8111156117d2576117d1610e43565b5b6117dc8254611425565b6117e7828285611769565b6000601f8311600181146118165760008415611804578287013590505b61180e858261165d565b865550611876565b601f19841661182486611754565b60005b8281101561184c57848901358255600182019150602085019450602081019050611827565b868310156118695784890135611865601f89168261163f565b8355505b6001600288020188555050505b50505050505050565b600381106118905761188f61137e565b5b50565b60008190506118a18261187f565b919050565b60006118b182611893565b9050919050565b6118c1816118a6565b82525050565b60006118d38385610fd5565b93506118e0838584610eef565b6118e983610e32565b840190509392505050565b600060408201905061190960008301866118b8565b818103602083015261191c8184866118c7565b9050949350505050565b7f4d6574616461746120646f6573206e6f74206578697374000000000000000000600082015250565b600061195c601783611148565b915061196782611926565b602082019050919050565b6000602082019050818103600083015261198b8161194f565b9050919050565b7f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160008201527f6464726573730000000000000000000000000000000000000000000000000000602082015250565b60006119ee602683611148565b91506119f982611992565b604082019050919050565b60006020820190508181036000830152611a1d816119e1565b9050919050565b7f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572600082015250565b6000611a5a602083611148565b9150611a6582611a24565b602082019050919050565b60006020820190508181036000830152611a8981611a4d565b905091905056fea2646970667358221220f260b611b7627537407385a8ed93b8213e03ba2774b9371803d6fa0d4943e4d464736f6c63430008120033",
+  "libraries": {
+    "StringsExpanded": "0x377662a8588c20Bf94B3b5685d096FE1CdF70Ef6"
+  },
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "addMetadata(uint8,string,bytes)": {
+        "params": {
+          "_metadata": "Metadata in JSON format.",
+          "_type": "Type of the proof metadata. Declared in {ProofTypes} library",
+          "_version": "Protocol version of the metadata. The version should be increased every time                there is a change in the metadata."
+        }
+      },
+      "forceUpdateMetadata(uint8,string,bytes)": {
+        "params": {
+          "_metadata": "Metadata in JSON format.",
+          "_type": "Type of the proof metadata. Declared in {ProofTypes} library",
+          "_version": "Protocol version of the metadata. The version should be increased every time                there is a change in the metadata. This function is only to adjusting the                inconsistency of metadata in smart contract and the one, used on the website."
+        }
+      },
+      "getMetadataNumOfVersions(uint8)": {
+        "params": {
+          "_type": "Type of the proof metadata. Declared in {ProofTypes} library"
+        },
+        "returns": {
+          "_0": "numVersions Number of versions."
+        }
+      },
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner."
+      },
+      "supportsInterface(bytes4)": {
+        "details": "See {IERC165-supportsInterface}."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "addMetadata(uint8,string,bytes)": {
+        "notice": "Add metadata by the contract administrator."
+      },
+      "forceUpdateMetadata(uint8,string,bytes)": {
+        "notice": "Update metadata by the contract administrator. Note: This has to be done ONLY in the event of incorrect data entry in `addMetadata`       function. Update of metadata on the protocol level should be done by adding another       metadata with newer version."
+      },
+      "getMetadataNumOfVersions(uint8)": {
+        "notice": "Get number of versions that exist for metadata by its name"
+      }
+    },
+    "notice": "Stores metadata for Proof-of-Authority, Proof-of-Signature, Proof-of-Agreement. Has an owner who can update this metadata.",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 7,
+        "contract": "contracts/ProofsMetadata.sol:ProofsMetadata",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 2478,
+        "contract": "contracts/ProofsMetadata.sol:ProofsMetadata",
+        "label": "proofsMetadata",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_mapping(t_enum(Proofs)3784,t_mapping(t_string_memory_ptr,t_bytes_storage))"
+      },
+      {
+        "astId": 2484,
+        "contract": "contracts/ProofsMetadata.sol:ProofsMetadata",
+        "label": "metadataVersions",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_mapping(t_enum(Proofs)3784,t_array(t_string_storage)dyn_storage)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_string_storage)dyn_storage": {
+        "base": "t_string_storage",
+        "encoding": "dynamic_array",
+        "label": "string[]",
+        "numberOfBytes": "32"
+      },
+      "t_bytes_storage": {
+        "encoding": "bytes",
+        "label": "bytes",
+        "numberOfBytes": "32"
+      },
+      "t_enum(Proofs)3784": {
+        "encoding": "inplace",
+        "label": "enum ProofTypes.Proofs",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_enum(Proofs)3784,t_array(t_string_storage)dyn_storage)": {
+        "encoding": "mapping",
+        "key": "t_enum(Proofs)3784",
+        "label": "mapping(enum ProofTypes.Proofs => string[])",
+        "numberOfBytes": "32",
+        "value": "t_array(t_string_storage)dyn_storage"
+      },
+      "t_mapping(t_enum(Proofs)3784,t_mapping(t_string_memory_ptr,t_bytes_storage))": {
+        "encoding": "mapping",
+        "key": "t_enum(Proofs)3784",
+        "label": "mapping(enum ProofTypes.Proofs => mapping(string => bytes))",
+        "numberOfBytes": "32",
+        "value": "t_mapping(t_string_memory_ptr,t_bytes_storage)"
+      },
+      "t_mapping(t_string_memory_ptr,t_bytes_storage)": {
+        "encoding": "mapping",
+        "key": "t_string_memory_ptr",
+        "label": "mapping(string => bytes)",
+        "numberOfBytes": "32",
+        "value": "t_bytes_storage"
+      },
+      "t_string_memory_ptr": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

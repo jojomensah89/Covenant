@@ -1,34 +1,84 @@
-// We require the Hardhat Runtime Environment explicitly here. This is optional
-// but useful for running the script in a standalone fashion through `node <script>`.
-//
-// You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
-// will compile your contracts, add the Hardhat Runtime Environment's members to the
-// global scope, and execute the script.
-const hre = require("hardhat");
+// /**
+//  * Deploy all project smart contracts and libraries
+//  */
 
-async function main() {
-  // const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  // const unlockTime = currentTimestampInSeconds + 60;
+// export const deployStringsExpanded = async (hre) => {
+//   const strings = await (
+//     await hre.ethers.getContractFactory("StringsExpanded")
+//   ).deploy();
+//   await strings.waitForDeployment();
 
-  // const lockedAmount = hre.ethers.parseEther("0.001");
+//   return { strings };
+// };
 
-  //   const lock = await hre.ethers.deployContract("Groth16Verifier");
-  const Verifier = await hre.ethers.getContractFactory("Groth16Verifier");
+// export const deployProofsVerification = async (hre) => {
+//   const proofsVerification = await (
+//     await hre.ethers.getContractFactory("ProofsVerification")
+//   ).deploy();
+//   await proofsVerification.waitForDeployment();
 
-  const result = await Verifier.deploy();
-  await result.deployTransaction.wait(1);
-  console.log("Deployed");
+//   return { proofsVerification };
+// };
 
-  console.log(result.address);
+// export const deployProofsHelper = async (hre, stringsAddr) => {
+//   const proofsHelper = await (
+//     await hre.ethers.getContractFactory("ProofsHelper", {
+//       libraries: { StringsExpanded: stringsAddr },
+//     })
+//   ).deploy();
+//   await proofsHelper.waitForDeployment();
 
-  //   await lock.waitForDeployment();
+//   return { proofsHelper };
+// };
 
-  //  console.log('Deployed')
-}
+// export const deployProofsMetadata = async (hre, stringsAddr) => {
+//   const proofsMetadata = await (
+//     await hre.ethers.getContractFactory("ProofsMetadata", {
+//       libraries: { StringsExpanded: stringsAddr },
+//     })
+//   ).deploy();
+//   await proofsMetadata.waitForDeployment();
 
-// We recommend this pattern to be able to use async/await everywhere
-// and properly handle errors.
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+//   return { proofsMetadata };
+// };
+
+// export const deployProofs = async (
+//   hre,
+//   stringsAddr,
+//   proofsVerificationAddr,
+//   proofsHelperAddr,
+//   proofsMetadataAddr,
+//   ownerAddr
+// ) => {
+//   const proofs = await (
+//     await hre.ethers.getContractFactory("Proofs", {
+//       libraries: {
+//         StringsExpanded: stringsAddr,
+//         ProofsVerification: proofsVerificationAddr,
+//         ProofsHelper: proofsHelperAddr,
+//       },
+//     })
+//   ).deploy(proofsMetadataAddr, ownerAddr);
+//   await proofs.waitForDeployment();
+
+//   return { proofs };
+// };
+
+// export const deployAll = async (hre, ownerAddr) => {
+//   const { strings } = await deployStringsExpanded(hre);
+//   const stringsAddr = await strings.getAddress();
+//   const { proofsMetadata } = await deployProofsMetadata(hre, stringsAddr);
+//   const { proofsVerification } = await deployProofsVerification(hre);
+//   const { proofsHelper } = await deployProofsHelper(hre, stringsAddr);
+//   const proofs = await (
+//     await hre.ethers.getContractFactory("Proofs", {
+//       libraries: {
+//         StringsExpanded: await strings.getAddress(),
+//         // ProofsVerification: await proofsVerification.getAddress(),
+//         // ProofsHelper: await proofsHelper.getAddress(),
+//       },
+//     })
+//   ).deploy(await proofsMetadata.getAddress(), ownerAddr);
+
+//   return { proofs, proofsMetadata, strings, proofsVerification, proofsHelper };
+// };
